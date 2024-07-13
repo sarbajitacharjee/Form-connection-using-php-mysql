@@ -1,4 +1,5 @@
 <?php 
+// TableName : employees
 
 include('./config.php');
 

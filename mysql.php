@@ -4,6 +4,7 @@ $host = "localhost";
 $username = "root";
 $password = null;
 $database =  "formdata";
+// TableName : employees
 
 
 // $conn = new mysqli($host,$username,$password,$database);

@@ -1,4 +1,5 @@
 <?php
+// TableName : employees
 
 if (isset($_POST['firstname'])) {
     include ('./config.php');
