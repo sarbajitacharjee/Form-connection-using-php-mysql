@@ -49,6 +49,7 @@ if ($emp) {
         echo "<td>" . $row['FirstName']  . "  " .$row['LastName'] . "</td>";
         echo "<td>" . $row['Email'] . "</td>";
         echo "<td>" . $row['Department'] . "</td>";
+        echo "<td><form method='post'> <button name=delete value=".$row['EmployeeID'].">Delete</button></form></td>";
         echo "</tr>";
     }
 
@@ -57,5 +58,14 @@ if ($emp) {
     echo "No records found.";
 }
 
+if(isset($_POST['delete']))
+{
+    $delete_id = $_POST['delete'];
+    $delete_query = $conn->prepare("DELETE FROM employees WHERE EmployeeID = '$delete_id'");
+    
+    $delete_query->execute();
+    echo "Succesfully Deleted";
+    header("Location: mysql.php");       // relocate to the file /refresh
+}
 
 ?>
