@@ -6,15 +6,15 @@ $password = null;
 $database =  "formdata";
 
 
-$conn = new mysqli($host,$username,$password,$database);
+// $conn = new mysqli($host,$username,$password,$database);
 
-if($conn -> connect_error)
-{
-    die("die connection ". $coon -> connect_error);
+// if($conn -> connect_error)
+// {
+//     die("die connection ". $coon -> connect_error);
 
-}
+// }
 
-echo "Connection success <br>";
+// echo "Connection success <br>";
 
 // $result = $conn -> query("show tables") -> fetch_all();
 // print_r($result);
