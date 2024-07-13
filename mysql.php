@@ -55,7 +55,9 @@ if ($emp) {
     }
 
     echo "</table>";
+    echo '<h1><button onclick="window.location.href=\'index.html\'">Go To Form</button></h1>';
 } else {
+    echo '<h1><button onclick="window.location.href=\'index.html\'">Go To Form</button></h1>';
     echo "No records found.";
 }
 
