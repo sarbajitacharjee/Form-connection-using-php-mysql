@@ -50,12 +50,17 @@ if ($emp) {
         echo "<td>" . $row['FirstName']  . "  " .$row['LastName'] . "</td>";
         echo "<td>" . $row['Email'] . "</td>";
         echo "<td>" . $row['Department'] . "</td>";
-        echo "<td><form method='post'> <button name=delete value=".$row['EmployeeID'].">Delete</button></form></td>";
+        echo "<td><form method='post'> 
+        <button name=delete value=".$row['EmployeeID'].">Delete</button>
+        
+        </form></td>";
+        echo "<td><a href='update.php?id=". $row['EmployeeID']."'>Edit</a> </td>";
         echo "</tr>";
     }
 
     echo "</table>";
-    echo '<h1><button onclick="window.location.href=\'index.html\'">Go To Form</button></h1>';
+    // echo '<h1><button onclick="window.location.href=\'index.html\'">Go To Form</button></h1>';
+    echo "<h1><a href='index.html'>Go To Form</a></h1>";
 } else {
     echo '<h1><button onclick="window.location.href=\'index.html\'">Go To Form</button></h1>';
     echo "No records found.";

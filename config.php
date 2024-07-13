@@ -8,7 +8,7 @@ $database =  "formdata";
 try{
     $conn = new PDO("mysql:host = $host; dbname=$database",$username,$password );
     $conn-> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    echo "<h1>Connection Done</h1>";
+    echo "<h3>Connection Done To database</h3>";
     
 }catch(PDOException $err){
     
