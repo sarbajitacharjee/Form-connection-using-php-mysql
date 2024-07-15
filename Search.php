@@ -24,8 +24,6 @@ if(isset($_POST['search']))
         echo "<h1><a href='mysql.php'>Go to dataList</a></h1>";
 }
 
-
-
 ?>
 
 <form action="" method="post">
