@@ -31,6 +31,8 @@ $database =  "formdata";
 
 include("./config.php");
 
+include('Search.php');
+
 
 
 $getdata = $conn -> prepare("select * from employees");
